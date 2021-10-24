@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -8,7 +8,7 @@ namespace Option
     {
         static int nbrPlace = 0;
         private string nomOption ;
-        private string[,] listEtudient = new string[nbrPlace , 4];
+        private string[,] listEtudient;
 
 
         public void setOption(string nom,int Place) 
@@ -19,6 +19,10 @@ namespace Option
         public int getnbrPlaceOption()
         {
            return nbrPlace;
+        }
+        public void setList(int nbrEtudient)
+        {
+            listEtudient = new string[nbrEtudient, 4];
         }
         public string getNomOption()
         {
