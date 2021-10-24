@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Option
 {
@@ -8,14 +8,21 @@ namespace Option
         {
             int sizetab = 10;
 
-            int Glcont  = 0;
+            int Glcont = 0;
             int ABDcont = 0;
             int ASRcont = 0;
 
             Option[] listOption = new Option[3];
+            listOption[0] = new Option();
             listOption[0].setOption("GL", 22);
+            listOption[1] = new Option();
             listOption[1].setOption("ABD", 22);
+            listOption[2] = new Option();
             listOption[2].setOption("ASR", 22);
+
+            listOption[0].setList(22);
+            listOption[1].setList(22);
+            listOption[2].setList(22);
 
             for (int i=0; i<sizetab; i++)
             {
